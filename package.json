@@ -1,0 +1,28 @@
+{
+  "name": "apartments-api",
+  "version": "1.0.0",
+  "description": "simple listing apartments app that allow the user to see more details about each apartment.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --poll src/index.ts"
+  },
+  "author": "Hossam Tarek",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "mysql2": "^3.10.2",
+    "uuid": "^10.0.0",
+    "@types/uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.8",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3"
+  }
+}
