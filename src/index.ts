@@ -19,7 +19,7 @@ const startServer = async () => {
 };
 
 // Mount routes
-app.use('/', routs);
+app.use('/api/v1', routs);
 
 // Error handling middleware
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
