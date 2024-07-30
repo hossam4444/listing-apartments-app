@@ -33,18 +33,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
-  frontend:
-    build:
-      context: ./frontend
-      target: development
-    ports:
-      - "3000:3000"
-    depends_on:
-      - api
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
-    command: npm run dev
 
 volumes:
   db_data:
